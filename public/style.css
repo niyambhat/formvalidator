@@ -1,0 +1,47 @@
+#primeTable {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+#primeTable h1 {
+  height: 130px;
+  width: 111px;
+  background-color: bisque;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0 !important;
+}
+
+/* input validators  */
+
+/* .vaild input {
+  border: 1px solid rgb(0, 255, 179) !important;
+} */
+
+.notvalid input {
+  border: 2px solid red !important;
+  display: none;
+}
+
+
+.selected .errorMsg{
+  display: block;
+  color: red;
+}
+
+.errorMsg{
+ display:none;
+}

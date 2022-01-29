@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <title>Online Form Validation</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <header>
+        <h1 style="margin-bottom: 50px">Online Form Validation</h1>
+        <p>
+          Please ensure you enter correct data when filling the following form.
+        </p>
+      </header>
+      <main>
+        <h3 style="margin-bottom: 25px">Dear user,</h3>
+
+        <form id="form" class="mb-5">
+          <div class="col-md-4 mb-3 ">
+            <input
+              type="text"
+              class="form-control mb-3"
+              id="name"
+              placeholder="Please enter your name"
+            />
+           <p class="errorMsg">Error message</p>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <input
+              type="email"
+              class="form-control mb-3"
+              id="deakinmail"
+              placeholder="Please enter your email"
+            />
+            <p class="errorMsg">Error message</p>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <input
+              type="text"
+              class="mb-3 form-control"
+              id="unitcode"
+              placeholder="Unit Code"
+            />
+            <p class="errorMsg">Error message</p>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <input
+              type="tel"
+              class="mb-3 form-control"
+              id="phone"
+              placeholder="Phone Number"
+            />
+           <p class="errorMsg">Error</p>
+          </div>
+
+          <input
+            type="submit"
+            class="btn btn-primary"
+            value="Submit"
+            id="handleClick"
+          />
+
+          <input
+            type="submit"
+            class="btn btn-danger"
+            value="Clear"
+            id="clear"
+            onclick="clearAll()"
+          />
+        </form>
+      </main>
+    </div>
+
+    <div class="container">
+      <div class="message"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
